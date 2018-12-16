@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task 10</title>
+</head>
+<body>
+  <script>
+    function checkSpam(str) {
+      var lowerStr = str.toLowerCase();
+    
+      return !!(~lowerStr.indexOf('viagra') || ~lowerStr.indexOf('xxx'));
+    }
+    
+    alert( checkSpam('buy ViAgRA now') );
+    alert( checkSpam('free xxxxx') );
+    alert( checkSpam("innocent rabbit") );
+  </script>
+</body>
+</html>
